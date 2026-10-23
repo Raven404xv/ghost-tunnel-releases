@@ -3,7 +3,7 @@
 #  Ghost Tunnel 8 - installer, updater and management menu
 #
 #  Run it once:
-#    bash <(curl -fsSL https://raw.githubusercontent.com/Raven404xv/ghost-tunnel/main/install.sh)
+#    bash <(curl -fsSL https://raw.githubusercontent.com/Raven404xv/ghost-tunnel-releases/main/install.sh)
 #  Then, at any time:
 #    sudo ghost-tunnel
 #
@@ -11,10 +11,10 @@ set -Eeuo pipefail
 
 # ============================================================================
 #  Project settings
-#  Replace Raven404xv/ghost-tunnel with your GitHub repository (owner/name).
+#  GT_REPO is the public repository that publishes the panel releases.
 #  Every value can also be overridden with an environment variable.
 # ============================================================================
-readonly GT_REPO="${GT_REPO:-Raven404xv/ghost-tunnel}"
+readonly GT_REPO="${GT_REPO:-Raven404xv/ghost-tunnel-releases}"
 readonly GT_BRANCH="${GT_BRANCH:-main}"
 
 readonly PANEL_BIN="/usr/local/bin/ghost-panel"
